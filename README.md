@@ -1,9 +1,14 @@
 # node.js-graphql-mongodb
 
 <p align="center">
- <a href="#objetivo">Objetivo</a> •
- <a href="#tecnologias">utilização</a> • 
- <a href="#autor">Autor</a>
+ <a href="#Description">Description</a> •
+ <a href="#GettingStarted">Getting Started</a> • 
+ <a href="#Technologies">Technologies</a>
+ <a href="#Build">Build</a> •
+ <a href="#Features">Features</a> • 
+ <a href="#Contributions">Contributions</a> •
+ <a href="#License">License</a> • 
+ <a href="#Author">Author</a>
 </p>
 
 ## Description
