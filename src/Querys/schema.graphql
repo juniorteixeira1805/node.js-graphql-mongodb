@@ -1,0 +1,16 @@
+type User { # Tipagem do formato do usuário dentro da API
+    id: ID! # id deve ser do tipo ID
+    name: String! # name deve ser do tipo string
+    email: String! # name deve ser do tipo string
+}
+
+# A exclamação é para obrigar o elemento do ser daquele determinado tipo
+
+type Query { # "Rotas"/Query para busca de informações
+    users: [User!]! # Retorna um array, se hover elementos, com elementos do tipo User
+    user(id: ID!): User # Retorna um usuário se existir, se não, retorna null
+}
+
+type Mutation { # "Rotas" para criar, editar e deletar informação
+    createUser(name: String!, email: String!): User #Rota com dois parmetros do tipo String para criar um usuário e retorna um usuário
+}
