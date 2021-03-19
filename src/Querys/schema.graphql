@@ -1,7 +1,7 @@
 type User { # Tipagem do formato do usuário dentro da API
     id: ID! # id deve ser do tipo ID
-    name: String! # name deve ser do tipo string
-    email: String! # name deve ser do tipo string
+    name: String # name deve ser do tipo string
+    email: String # name deve ser do tipo string
 }
 
 # A exclamação é para obrigar o elemento do ser daquele determinado tipo

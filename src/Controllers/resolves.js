@@ -14,24 +14,20 @@ module.exports = {
 */
 const users = [
     {id: 1, name: 'Mateus Loiola', email: 'mateus@gmail.com'},
-    {id: 2, name: 'Adelson Nunes', email: 'adelson@gmail.com'},
+    {id: 2, name: 'Adelson Nunes', email: null},
     {id: 3, name: 'Marcos Adriano', email: 'maria@gmail.com'},
     {id: 4, name: 'Ruan Kelvin', email: 'ruan@gmail.com'},
     {id: 5, name: 'Diego Oliveira', email: 'diego@gmail.com'},
     {id: 6, name: 'Alice Costa', email: 'alice@gmail.com'},
     {id: 7, name: 'Song Jong', email: 'song@gmail.com'}
 ] // array com usuários para teste
-
+ 
 module.exports = {
     Query: {
         users: () => users, // Listando todos os usuários do do array
         user: (_,{id}) => { // procurando um usuário por um ID do array
-            for(let i = 0; i < users.length; i++){
-                if(parseInt(id) === users[i].id){
-                    return users[i-1]
-                }
-            }
-            return null; // caso não exista, retorna null
+            const usuario = users.filter((objeto) => objeto.id == id)
+            return usuario[0]; // caso não exista, retorna null
         }
     },
 
@@ -43,6 +39,6 @@ module.exports = {
             } catch (error) {
                 return null
             }
-        } // Criando um usuário no BD
+        }, // Criando um usuário no BD 
     }
 }
