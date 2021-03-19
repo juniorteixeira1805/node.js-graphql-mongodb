@@ -6,22 +6,53 @@
  <a href="#autor">Autor</a>
 </p>
 
-**Está aplicação é uma simples forma de cadastrar e listar usuário utilizando node e graphQL.L**
+## Description
+Está aplicação é uma simples forma de cadastrar e listar usuário utilizando node.js e graphQL
 
-<p>Para executar esté programa, você precisará do node instalado em sua maquina e seguir os seguintes passos:</p>
-
-<ul>
-  <li>Clona o projeto;</li>
-  <li>Na raiz da pasta executar o comando <yarn install> para instalar as dependencias;</li>
-  <li>Na raiz do projeto executar o comando <node src/server.js>;</li>
-</ul>
-
+## Getting Started
+Para utilizar o projeto, basta clonar o repositório em um diretório de sua preferência com o seguinte comando:
+```
+git clone https://github.com/juniorteixeira1805/node.js-graphql-mongodb
+```
+Para instalar as dependenciasa, raiz da pasta, executar o comando:
+```
+yarn install
+```
+Na raiz do projeto executar o comando
+```
+node src/server.js
+```
 <span><strong>OBS:</strong> Ao executar o projeto, ele estará ouvindo a porta http://localhost:4000</span>
 
-<span><strong>OBS:</strong> Você terá a passibilidade de testar a plaicação com um array ou com o banco de dados. Para utilizar o BD, basta ir no arquivo resolves na pasta Controllers e descomentar o trecho do código do Banco de Dados e comentar o trecho de código que utiliza o array | por padrão está utilizando o array.</span>
+## Technologies
+- node.js
+- mongoDB
+- graphQL
 
-<img src="https://avatars.githubusercontent.com/u/49037876?s=460&u=f48ae3d1fc11fb2a22c1add56b941428bd143f8b&v=4" alt="junior teixeira" style="width:250px; height: 250px; border-radius: 50%;"></img>
-### Gilvan Carlos Teixeira Junior
+## Build
+Na raiz do projeto executar o comando
+```
+yarn build
+```
+## Features
+- É possível cadastrar usuários de modo:
+  - Em um array para um teste rápido da aplicação.
+  - No Banco de Dados.
+- Para utilizar o BD, basta ir no arquivo resolves.js na pasta Controllers e descomentar o trecho do código do Banco de Dados e comentar o trecho de código que utiliza o array | por padrão, a aplicação está utilizando o array.
+- É possível listar um unico usuário chamando a Query user() passando um ID;
+- É possível listar uyodos os usuário chamando a Query users() sem passar parametros;
+- É possível cadastrar um novo usuário chamando a Query createUser() passando por parametro um nome e email;
+
+## Contributions
+Contribuições para o projeto são sempre bem-vindas.
+
+## License
+Não se aplica.
+
+## Author
+Feito por Junior Teixeira, entre em contato!
+
+<img src="https://avatars.githubusercontent.com/u/49037876?s=96&v=4" alt="junior teixeira"></img>
 
 [![Linkedin Badge](https://img.shields.io/badge/-Gilvan%20Carlos-3355cc?style=flat-square&logo=Linkedin&logoColor=white&link=https://www.linkedin.com/in/gilvan-carlos/)](https://www.linkedin.com/in/gilvan-carlos/) 
 [![Gmail Badge](https://img.shields.io/badge/-juniorteixeira1805@gmail.com-3355cc?style=flat-square&logo=Gmail&logoColor=white&link=mailto:juniorteixeira1805@gmail.com)](mailto:juniorteixeira1805@gmail.com)
