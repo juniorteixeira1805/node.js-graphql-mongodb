@@ -49,7 +49,7 @@ yarn build
 - É possível cadastrar um novo usuário chamando a Query createUser() passando por parametro um nome e email;
 
 ## Contributions
-Contribuições para o projeto são sempre bem-vindas. Entretando, o projeto está descontinuado!
+Contribuições para o projeto são sempre bem-vindas.
 
 ## License
 Não se aplica.
